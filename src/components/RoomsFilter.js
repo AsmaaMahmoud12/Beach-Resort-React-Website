@@ -4,7 +4,9 @@ import { RoomContext } from '../Context'
 import Title from '../components/Title'
 // get all unique values
 const getUnique = (items,value) => {
-    return [... new Set(items.map(item => item[value]))]
+    return (
+        [... new Set(items.map(item => item[value]))]
+    )
 }
 const RoomsFilter = ({ rooms }) => {
     const context = useContext(RoomContext)
