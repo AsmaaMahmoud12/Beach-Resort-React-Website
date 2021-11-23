@@ -8,7 +8,6 @@ const RoomsList = ({rooms}) => {
         return (
             <div className='empty-search'>
             <h3>unfortunately no rooms matched your search parameters</h3>
-                hello from room list
             </div>
         )
     }
